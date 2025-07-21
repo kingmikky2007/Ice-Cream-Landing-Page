@@ -1,0 +1,211 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  margin: 0;
+}
+body {
+  background-color: #BDA8E1; /* Lavender */
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Header */
+header {
+  background-color: #bda8e1; /* Lavendar background */
+  padding: 7px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Logo Styling */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 240px;
+  height: auto;
+  z-index: 10;
+}
+/* Navigation Container */
+.main-nav {
+  position: absolute;
+  top: 25px;
+  left: 475px; /* Adjust based on logo size */
+  z-index: 10;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav li {
+  margin: 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 24px;
+  transition: all 0.3s ease;
+  padding: 10px 20px; /* Adds inner spacing */
+  border-radius: 25px; /* Rounded pill shape */
+  background-color: #E9F5FF; /* Light purple background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  display: inline-block;
+}
+
+.main-nav a:hover {
+  background-color: #673AB7; /* Darker purple on hover */
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Pill container for all nav items */
+.nav-pills {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 50px;
+  background-color: #E9F5FF; /* Light purple background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-pills ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 50px; /* Space between links */
+}
+
+.nav-pills li {
+  margin: 0;
+}
+
+.nav-pills a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 24px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+/* Subtle hover effect */
+.nav-pills a:hover {
+  background-color: rgba(103, 58, 183, 0.2); /* Very light purple */
+  color: #222;
+}
+
+/* Hero Section */
+.hero {
+  position: absolute;
+  top: 290px;
+  left: 80px;
+  z-index: 5;
+}
+.hero.content {
+  left: 200px;
+}
+.fancy-text {
+  font-family: 'Lemon', cursive;
+  font-size: 50px;
+  color: #673ab7; /* Main text color */
+  text-align: left;
+  line-height: 0.5;
+  text-shadow:
+    -1px -1px 0 #3b1a75,
+     1px -1px 0 #3b1a75,
+    -1px  1px 0 #3b1a75,
+     1px  1px 0 #3b1a75;
+}
+
+.fancy-text span {
+  display: block;
+  margin: 4px 0; /* Optional spacing between lines */
+}
+
+.cta-buttons {
+  display: flex;
+  margin-top: 30px; /* Adjust this value to increase or decrease the space */
+  
+  gap: 20px;
+}
+.btn-primary {
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #e74c3c;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #ff6b6b;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-secondary:hover {
+  background-color: #ff6b6b;
+  color: #fff;
+}
+/* Ice Cream Image */
+.image-container {
+  position: absolute;
+  top: 52%;
+  right: 90px;
+  transform: translateY(-50%);
+}
+
+.ice-cream-image {
+  max-width: 500px;
+  height: auto;
+  z-index: 5;
+}
+
+/* Footer */
+.copyright {
+  position: absolute;
+  bottom: 20px; /* Distance from the bottom */
+  right: 500px; /* Distance from the right edge */
+  text-align: center;
+  padding: 10px;
+  color: #333;
+  font-size: 14px;
+  z-index: 10; /* Ensure it appears above other elements */
+}
